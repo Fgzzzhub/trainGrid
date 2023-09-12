@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ngobar Grid</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="hero">
+          <h2 class="heading">Rapunsel Salon</h2>
+          <p class="sub-heading">Hair Treatment & Facial</p>
+        </div>
+        <div class="features features1">
+          <h4 class="price">IDR 100K</h4>
+          <p class="item">Hair Color</p>
+        </div>
+        <div class="features features2">
+          <h4 class="price">IDR 150K</h4>
+          <p class="item">Facial</p>
+        </div>
+      </header>
+
+      <nav class="menu">
+        <nav class="menu-toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </nav>
+        <div class="brand">
+          <h1>Rapunsel Salon</h1>
+        </div>
+        <ul class="menu-list">
+          <li><a href="">Home</a></li>
+          <li><a href="">Product</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Gallery</a></li>
+        </ul>
+      </nav>
+      <section class="services">
+        <div class="service">
+          <div class="icon">💻</div>
+          <h3>Tutorial</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore perspiciatis, ipsam aut sit dignissimos amet?</p>
+        </div>
+        <div class="service">
+          <div class="icon">💇</div>
+          <h3>HairCut</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore perspiciatis, ipsam aut sit dignissimos amet?</p>
+        </div>
+        <div class="service">
+          <div class="icon">💆</div>
+          <h3>Facial Wash</h3>
+          <p>Lorem ipsum dol or sit amet consectetur adipisicing elit. Dolore perspiciatis, ipsam aut sit dignissimos amet?</p>
+        </div>
+        <div class="service">
+          <div class="icon">🍔</div>
+          <h3>FreeFood</h3>
+          <p>Lorem ipsum dol or sit amet consectetur adipisicing elit. Dolore perspiciatis, ipsam aut sit dignissimos amet?</p>
+        </div>
+      </section>
+    </div>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const menuList = document.querySelector(".menu-list");
+
+      menuToggle.addEventListener("click", function () {
+        menuList.classList.toggle("slide");
+      });
+    </script>
+  </body>
+</html>
